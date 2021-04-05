@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="img/tree.ico"/>
+<title>Du Lịch Việt Nam</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/modify.css" type="text/css">
+<link rel="stylesheet" href="css/navbar.css" type="text/css">
+<link href="css/aos.css" rel="stylesheet">
+<script src="js/aos.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css">
+<script type="text/javascript" src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+</head>
+<body>
+<div class="bg"> <!--background img-->
+	<nav class="navbar navbar-expand-lg bg-transparent navbar-dark"> <!--Menu-->
+		<a class="navbar-brand" href="#">TravelNote</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active mr-2">
+					<a class="nav-link" href="Home.html">Home</a>
+				</li>
+				<li class="nav-item mr-2">
+					<a class="nav-link" href="Gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item mr-2">
+					<a class="nav-link" href="About.html">About</a>
+				</li>   
+				<li class="nav-item mr-3">
+					<a class="nav-link" href="Contact.html">Contact</a>
+				</li>  				
+			</ul>
+			<div class="powr-social-media-icons" id="d218722a_1526961962"></div>
+			<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" style="font-weight:bold" type="submit">Search</button>
+            </form>
+		</div>  
+	</nav>
+	<div style="min-height: 50px;"> <!--slideshow-->
+        <!-- Jssor Slider Begin --> 
+        <style>
+            /* jssor slider loading skin spin css */
+            .jssorl-009-spin img {
+                animation-name: jssorl-009-spin;
+                animation-duration: 1.6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes jssorl-009-spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+            </div>
+
+            <!-- Slides Container -->
+            <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                <div>
+                    <img data-u="image" src="img/danangslide.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="img/sapaslide.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="img/vinhhalongslide.jpg"/>
+                </div>
+            </div>
+            
+            <!--#region Bullet Navigator Skin Begin -->
+            <!-- Help: https://www.jssor.com/development/slider-with-bullet-navigator.html -->
+            <style>
+                .jssorb031 {position:absolute;}
+                .jssorb031 .i {position:absolute;cursor:pointer;}
+                .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+                .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+                .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+                .jssorb031 .i.idn {opacity:.3;}
+            </style>
+            <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                    <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                </div>
+            </div>
+            <!--#endregion Bullet Navigator Skin End -->
+        
+            <!--#region Arrow Navigator Skin Begin -->
+            <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+            <style>
+                .jssora051 {display:block;position:absolute;cursor:pointer;}
+                .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+                .jssora051:hover {opacity:.8;}
+                .jssora051.jssora051dn {opacity:.5;}
+                .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+            </style>
+            <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+            </div>
+            <!--#endregion Arrow Navigator Skin End -->
+        </div>
+        <!-- Jssor Slider End -->
+    </div>
+	
+	<div data-aos="fade-in" id="white" class="container-fluid"> <!--text-->
+		<div class="container">
+			<div  class="row" >
+				<!--<div id="midimg" class="col-md-2">
+					<img class="img-fluid" src="img/VietNam.jpg" alt="ban do viet nam" />
+				</div>-->
+				<div data-aos="fade-up" id="mid" class="col-md-5">
+					<h4>Khám Phá Việt Nam</h4>
+					<p>Hãy cùng chúng tôi khám phá các địa điểm du lịch trên cả đất nước Việt Nam, tận hưởng niềm vui thú, mở mang trí óc, đi đến những nơi bạn chưa từng đặt chân đến</p>
+				</div>
+				<div data-aos="fade-up" id="mid" class="col-md-5">
+					<h4>Những địa điểm nổi tiếng</h4>
+					<p>Bạn muốn đi du lịch nhưng không biết nên đi đâu ! <br>Hãy tìm hiểu ngay những địa điểm bên dưới.</p>
+				</div>
+			</div>		
+		</div>								
+	</div>
+	<div class="container">
+		<div id="transparent" class="row">
+			<div class="col-md-3">
+				<div data-aos="fade-up-right" class="img-thumbnail"><!--Vinh ha long-->
+					<a href="#">
+						<img  src="img/vinhhalong-thumb.jpg" alt="vinhhalong" style="width:100%"/>
+						<div class="caption">
+							<p>Vịnh Hạ Long</p>
+						</div>
+						<div class="middle">
+							<div class="text">Click to see detail</div>
+						</div>
+					</a>
+				</div>				
+				<div data-aos="fade-up-right" class="img-thumbnail"><!--Da nang-->
+					<a href="#" target="_blank">
+						<img  src="img/danang-thumb.jpg" alt="vinhhalong" style="width:100%"/>
+						<div class="caption">
+							<p>Đà Nẵng</p>
+						</div>
+						<div class="middle">
+							<div class="text">Click to see detail</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div data-aos="fade-up" class="img-thumbnail"><!--Nha trang-->
+					<a href="#" target="_blank">
+						<img  src="img/nhatrang-thumb.jpg" alt="nhatrang" style="width:100%"/>
+						<div class="caption">
+							<p>Nha Trang</p>
+						</div>
+						<div class="middle">
+							<div class="text">Click to see detail</div>
+						</div>
+					</a>
+				</div>
+				<div data-aos="fade-up" class="img-thumbnail"><!--Hoi an-->
+					<a href="#" target="_blank">
+						<img  src="img/hoian-thumb.jpg" alt="vinhhalong" style="width:100%"/>
+						<div class="caption">
+							<p>Hội An</p>
+						</div>
+						<div class="middle">
+							<div class="text">Click to see detail</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div data-aos="fade-up" class="img-thumbnail"><!--Phan thiet-->
+					<a href="#" target="_blank">
+						<img  src="img/phanthiet-thumb.jpg" alt="phanthiet" style="width:100%"/>
+						<div class="caption">
+							<p>Phan Thiết</p>
+						</div>
+						<div class="middle">
+							<div class="text">Click to see detail</div>
+						</div>
+					</a>
+				</div>
+				<div data-aos="fade-up" class="img-thumbnail"><!--Phu quoc-->
+					<a href="#" target="_blank">
+						<img  src="img/phuquoc-thumb.jpg" alt="vinhhalong" style="width:100%"/>
+						<div class="caption">
+							<p>Phú Quốc</p>
+						</div>
+						<div class="middle">
+							<div class="text">Click to see detail</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div data-aos="fade-left" class="img-thumbnail"><!--Sapa-->
+					<a href="#" target="_blank">
+						<img  src="img/sapa-thumb.jpg" alt="sapa" style="width:100%"/>
+						<div class="caption">
+							<p>SaPa</p>
+						</div>
+						<div class="middle">
+							<div class="text">Click to see detail</div>
+						</div>
+					</a>
+				</div>
+				<div data-aos="fade-left" class="img-thumbnail"><!--Nam du-->
+					<a href="#" target="_blank">
+						<img  src="img/namdu-thumb.jpg" alt="namdu" style="width:100%"/>
+						<div class="caption">
+							<p>Nam Du</p>
+						</div>
+						<div class="middle">
+							<div class="text">Click to see detail</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div data-aos="fade-in" id="white" class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div id="tips" class="col-md-3">
+					<h4 data-aos="fade-up">Tips</h4>
+					<div data-aos="fade-up" class="img-thumbnail">
+						<a href="#tipsdanang" target="_blank">
+							<img src="img/tipsdanang.jpg" alt="tipsdanang"/>
+						</a>
+					</div>
+					<a href="#tipsdanang"><h6  data-aos="fade-up">Kinh nghiệm du lịch đà nẵng</h6></a>
+					<p data-aos="fade-up">Đà Nẵng một trong những thành phố sạch và đẹp nhất tại Việt Nam, là thành phố có nhiều danh lam thắng cảnh nổi tiếng và nhiều khu vui chơi giải trí.</p>
+				</div>
+				<div id="gallery" class="col-md-6">
+					<h4 data-aos="fade-up">Galleries</h4>
+					<div data-aos="flip-left" data-nanogallery2='{
+							"itemsBaseURL": "img/",
+							"thumbnailWidth": "150",
+							"thumbnailHeight": "120",
+							"thumbnailAlignment": "center",
+							"galleryMaxItems": 6,
+							"thumbnailGutterWidth": 20,
+							"thumbnailGutterHeight": 20
+						}'>
+						<a href="danang.jpg" data-ngthumb="danang-thumb.jpg" data-ngdesc="">Đà nẵng</a>
+						<a href="nhatrang.jpg" data-ngthumb="nhatrang-thumb.jpg" data-ngdesc="">Nha trang</a>
+						<a href="nha trang.jpg" data-ngthumb="phanthiet-thumb.jpg" data-ngdesc="">Phan thiết</a>
+						<a href="phocohoian.jpg" data-ngthumb="hoian-thumb.jpg" data-ngdesc="">Hội an</a>
+						<a href="vinhhalong.jpg" data-ngthumb="vinhhalong-thumb.jpg" data-ngdesc="">Vịnh hạ long</a>
+						<a href="sapa.jpg" data-ngthumb="sapa-thumb.jpg" data-ngdesc="">Sapa</a>
+					</div>
+				</div>
+				<div id="top10" class="col-md-3">
+					<h4 data-aos="fade-up">References</h4>
+					<ul>
+						<li data-aos="fade-right"><a href="#"><p>Top 10 nơi phải đến khi du lịch đà nẵng.</p></a></li>
+						<li data-aos="fade-right"><a href="#"><p>Top 10 địa điểm phải đến khi du lịch nha trang.</p></a></li>
+						<li data-aos="fade-right"><a href="#"><p>Top 10 nơi phải đến khi du lịch phan thiết.</p></a></li>
+						<li data-aos="fade-right"><a  href="#"><p>Du lịch hội an - 18 địa điểm nổi tiếng.</p></a></li>
+						<li data-aos="fade-right"><a  href="#"><p>Top 20 địa điểm khi du lịch hạ long.</p></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div  class="container">
+		<div id="transparent" class="row"><p>Du Lich Viet Nam &#169; 2018</p></div>
+	</div>
+</div>
+<!--phia duoi la phan cua plugin-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- jssor slider scripts-->
+    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: 1,                                       //[Optional] Auto play or not, to enable slideshow, this option must be set to greater than 0. Default value is 0. 0: no auto play, 1: continuously, 2: stop at last slide, 4: stop on click, 8: stop on user navigation (by arrow/bullet/thumbnail/drag/arrow key navigation)
+                $Idle: 4000,                                        //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: 1,   			                //[Optional] Steps to go for each navigation request by pressing arrow key, default value is 1.
+                $SlideEasing: $Jease$.$OutQuint,                    //[Optional] Specifies easing for right to left animation, default value is $Jease$.$OutQuad
+                $SlideDuration: 800,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide, default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $Orientation: 1                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2                                 //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+	<script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+</body>
+</html>

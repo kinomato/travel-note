@@ -1,0 +1,47 @@
+
+.navbar1 .navbar-nav li{
+	float:right;
+}
+.navbar .navbar-nav li a{
+	font-weight:bold;
+	color:white;
+	-font-weight:bold;
+	-float:left;
+	-display:block;
+	
+	
+}
+.navbar1 .navbar-collapse .navbar-nav li a{
+	margin-right:5px;
+}
+.navbar .navbar-collapse .navbar-nav .active a{
+	border-radius: 5px;
+	font-weight:bold;
+	color: black;
+	text-decoration:none;
+	background-color:white;
+	mix-blend-mode: screen;
+}
+.navbar .navbar-collapse .navbar-nav li a:hover {
+	border-radius: 5px;
+	font-weight:bold;
+	color: black;
+	text-decoration:none;
+	background-color:white;
+	mix-blend-mode: screen;	
+}
+.navbar1 .navbar-nav #active a{
+	border-radius: 10px;
+	font-weight:bold;
+	color: black;
+	text-decoration:none;
+	background-color:white;
+	mix-blend-mode: screen;
+	
+}
+.navbar .navbar-brand{
+	color:white;
+	font-size:200%;
+	
+	font-family:Comic Sans MS;
+}
